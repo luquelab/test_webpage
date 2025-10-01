@@ -1,9 +1,19 @@
-title: Just the Docs Template
-description: A starter template for a Jeykll site using the Just the Docs theme!
+title: "Luque Lab — Test Site"
+description: "Documentation site (Just the Docs) for Luque Lab"
+url: "https://luquelab.github.io"   # org/site root
+baseurl: "/test_webpage"            # repo name (project site subpath)
+
 theme: just-the-docs
 
-url: "https://luquelab.github.io"
-baseurl: "/test_webpage"
-
+# Navigation items shown in the top-right (optional; remove if not needed)
 aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+  "Luque Lab GitHub":
+    - "https://github.com/luquelab"
+
+# Built-in search
+search_enabled: true
+
+# (Optional) Where to put assets you add later (fonts, css, images)
+# just_the_docs:
+#   stylesheets:
+#     - assets/css/fonts.css
