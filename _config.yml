@@ -2,6 +2,7 @@ title: "Luque Lab — Test Site"
 description: "Documentation site (Just the Docs) for Luque Lab"
 url: "https://luquelab.github.io"   # org/site root
 baseurl: "/test_webpage"            # repo name (project site subpath)
+permalink: pretty
 
 theme: just-the-docs
 
