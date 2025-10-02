@@ -4,12 +4,18 @@ layout: default
 nav_order: 1
 ---
 
-# Luque Lab (Test Site)
+# Luque Lab
 
-Welcome to the new documentation-style site for Luque Lab.  
-This is a fresh Just-the-Docs setup to keep things fast and simple.
+![home_page](/assets/images/shared/hpv_small_polygon_mix_Thomas_Splettstoesser_cropped.jpg)
 
-- Use the **left sidebar** to navigate sections.
-- Use the **search** box (top-left) to find pages by title/content.
+Our lab investigates the physical structure, ecology, and evolution of viruses, combining theoretical biophysics, bioinformatics, and predictive modeling in close collaboration with experimentalists. The lab moved to the [Department of Biology at the University of Miami](https://biology.as.miami.edu/) in Fall 2023 after nearly eight years forming part of the [Viral Information Institute (VII)](https://viralization.org/), the Computational Science Research Center, and the Department of Mathematics & Statistics at San Diego State University.
 
-> ⚠️ This is a sandbox. We will bring content over from the old site gradually and avoid third-party CDNs to keep load times quick.
+### Highlighted News
+
++ [The Luque lab migrates its website to GitHub](/pages/news.md) &nbsp; December 28, 2023
+
++ [Publication of pyCapsid in Bioinformatics](/pages/news.md) &nbsp; December 19, 2023
+
++ [The Luque lab moves to Miami](/pages/news.md) &nbsp; August 15, 2023
+
+*Visit our [News](/pages/news.md) page to explore more news from the lab.*
