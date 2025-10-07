@@ -12,6 +12,37 @@ Files and folders:
 # Instructions
 The repository is maintained and updated following the protocol illustrated in the flowchart below and described in text format after the figure.
 
+```mermaid
+---
+title: Instructions for maintaining the Github repo
+---
+flowchart TD
+  %% Minimal, vertical, readable
+
+  A["Start"] --> B["Lab update identified"]
+  B --> C["Update GitHub repository"]
+  C --> D["Write markdown text"]
+  D --> E["Update page or subpage"]
+
+  E --> J{"Add news"}
+  J -- "Yes" --> F["Add news entry"]
+  J -- "No"  --> G["Skip news"]
+  F --> H["Commit all changes"]
+  G --> H
+
+  H --> I["Update official website"]
+  I --> Z["Stop"]
+
+  %% Right side notes
+  B -.-> N1["Examples: new submission, publication, award, presentation, software or data release, event"]
+  C -.-> N2["Either write and push changes, or open an issue to be handled by contributor and lab manager or technician"]
+  I -.-> N3["Monthly sync: apply repo changes to site. Quarterly audit: review repository and website content"]
+
+  %% Note style
+  classDef note fill:#f9f9f9,stroke:#bdbdbd,color:#333,stroke-dasharray: 3 3,rx:4,ry:4;
+  class N1,N2,N3 note;
+```
+
 1. **Lab New Item** \
    This is the trigger. Here are examples:
     + New submission (paper/grant)
@@ -31,3 +62,4 @@ The repository is maintained and updated following the protocol illustrated in t
 3. **Update Official Website**: 
     + Update any changes uploaded in the repository to the associated lab website(s) once a month: The first day of the month (or first working day possible).
     + Review the repository content and lab website(s) content once a quarter, during the days associated to lab data management and overview.
+
