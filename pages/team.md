@@ -50,3 +50,7 @@ has_children: true
 | [**Messiah Godfred Majid**](#messiah-godfred-majid) | **Research Assistant** since 2025 |
 | <img src="{{ '/assets/images/team/profile_messiah_majid_godfred.jpg' | relative_url }}" width="200"> <br> <sub>Picture from …</sub> <br> [LinkedIn](https://www.linkedin.com/in/messiahmajid/) | Messiah is a sophomore at the University of Miami, studying Computer Science, Mathematics, and Biology. His research interests lie in computational biology and microbial/viral systems. | 
 | [Email](mailto:messiah.majid@miami.edu) &nbsp; | [Functional resume]({{ '/resumes/messiah_majid_resume.pdf' | relative_url }}) |
+
+| [**Ian Fitzmaurice**](#ian-fitzmaurice) | **Research Assistant** since 2025 |
+| <img src="{{ '/assets/images/team/Ian_Fitzmaurice_profile_426x426.jpg' | relative_url }}" width="200"> <br> <sub>Picture from …</sub> <br> [LinkedIn](http://www.linkedin.com/in/ian-fitzmaurice-7277b8327) | Ian Fitzmaurice is an Isaac Bashevis Singer Scholar at the University of Miami, pursuing a double major in Biology and Biochemistry & Molecular Biology with a minor in Chemistry. His research interests center on genetic and molecular approaches to studying virology. Outside of research, Ian enjoys running and watching movies. | 
+| [Email](mailto:ijf33@miami.edu) &nbsp; | [Functional resume]({{ '/resumes/Ian_Fitzmaurice_functional_resume.pdf' | relative_url }}) |
