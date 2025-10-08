@@ -18,3 +18,17 @@ search_enabled: true
 # just_the_docs:
 #   stylesheets:
 #     - assets/css/fonts.css
+
+# Collections (For news posts)
+
+collections:
+  news:
+    output: false         # keep items as data-only; we’ll render them on one page
+    sort_by: date
+
+defaults:
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: null
