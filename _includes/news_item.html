@@ -1,0 +1,41 @@
+<div class="news-card">
+  <div class="news-header">
+    <h2 class="news-title">
+      {{ item.title }}
+    </h2>
+    <span class="news-date">
+      {{ item.date | date: "%B %-d, %Y" }}
+    </span>
+  </div>
+
+  <div class="news-body">
+    {% if item.image %}
+      <div class="news-image">
+        <img
+          src="{{ item.image | relative_url }}"
+          {% if item.image_width %}width="{{ item.image_width }}"{% endif %}
+          loading="lazy" alt="">
+      </div>
+    {% endif %}
+
+    <div class="news-text">
+      {{ item.summary | markdownify }}
+      <div class="news-links">
+        {% if item.links and item.links.primary %}
+          <a href="{{ item.links.primary }}" target="_blank" rel="noopener">Read more</a>
+          {% if item.links.note %}<span class="news-note">— {{ item.links.note }}</span>{% endif %}
+        {% endif %}
+        {% if item.team_links %}
+          <span class="news-team">
+            {% for t in item.team_links %}
+              {% if forloop.first %} • {% endif %}
+              <a href="{{ t.href | relative_url }}">{{ t.text }}</a>{% unless forloop.last %}, {% endunless %}
+            {% endfor %}
+          </span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<hr class="news-sep">
+
