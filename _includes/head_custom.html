@@ -1,15 +1,49 @@
 <style>
+/* —— Layout & typography for news items —— */
 .news-card{padding:0.75rem 0}
 .news-header{display:flex;gap:.5rem;align-items:baseline;flex-wrap:wrap}
 .news-title{margin:0;font-size:1.1rem}
 .news-date{color:#6b7280;font-size:.95rem}
-.news-body{display:flex;gap:1rem;align-items:flex-start}
-.news-image img{border-radius:.25rem;max-width:100%;height:auto}
+.news-body{display:flex;gap:1rem;align-items:flex-start;flex-wrap:wrap}
 .news-text p{margin:.25rem 0 .5rem}
 .news-links{font-size:.95rem}
 .news-links a{white-space:nowrap}
 .news-note{color:#6b7280}
 .news-team{color:#6b7280}
 .news-sep{border:0;border-top:1px solid #e5e7eb;margin:0.5rem 0 1rem}
-</style>
 
+/* —— Uniform thumbnails —— */
+:root{
+  --news-thumb-w: 220px;   /* tweak width here */
+  --news-thumb-h: 140px;   /* tweak height here */
+  --news-thumb-pad: 6px;
+  --news-thumb-bg: #fff;
+  --news-thumb-bd: #e5e7eb;
+}
+
+.news-image{width:var(--news-thumb-w);flex:0 0 var(--news-thumb-w)}
+.news-thumb{
+  display:block;
+  width:var(--news-thumb-w);
+  height:var(--news-thumb-h);
+  padding:var(--news-thumb-pad);
+  background:var(--news-thumb-bg);
+  border:1px solid var(--news-thumb-bd);
+  border-radius:6px;
+  box-sizing:border-box;
+  object-fit:contain;      /* keep aspect; no cropping */
+  object-position:center;
+  max-width:100%;
+}
+.news-thumb:hover{box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.news-thumb.placeholder{
+  display:grid;place-items:center;
+  color:#6b7280;font-size:12px;font-style:italic;
+}
+
+/* —— Responsive tweaks —— */
+@media (max-width: 720px){
+  .news-image{width:100%;flex:1 1 100%}
+  .news-thumb{width:100%;max-width:var(--news-thumb-w)}
+}
+</style>

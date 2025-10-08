@@ -1,20 +1,21 @@
 <div class="news-card">
   <div class="news-header">
-    <h2 class="news-title">
-      {{ item.title }}
-    </h2>
-    <span class="news-date">
-      {{ item.date | date: "%B %-d, %Y" }}
-    </span>
+    <h2 class="news-title">{{ item.title }}</h2>
+    <span class="news-date">{{ item.date | date: "%B %-d, %Y" }}</span>
   </div>
 
   <div class="news-body">
     {% if item.image %}
       <div class="news-image">
         <img
+          class="news-thumb"
           src="{{ item.image | relative_url }}"
-          {% if item.image_width %}width="{{ item.image_width }}"{% endif %}
-          loading="lazy" alt="">
+          alt="{{ item.title | escape }}"
+          loading="lazy">
+      </div>
+    {% else %}
+      <div class="news-image">
+        <div class="news-thumb placeholder">No image</div>
       </div>
     {% endif %}
 
@@ -38,4 +39,3 @@
   </div>
 </div>
 <hr class="news-sep">
-
