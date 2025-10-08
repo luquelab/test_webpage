@@ -25,7 +25,7 @@ flowchart TD
   D --> E["Update page or subpage"]
 
   E --> J{"Add news"}
-  J -- "Yes" --> F["Add news entry"]
+  J -- "Yes" --> F["Add news entry to _news/"]
   J -- "No"  --> G["Skip news"]
   F --> H["Commit all changes"]
   G --> H
@@ -62,4 +62,3 @@ flowchart TD
 3. **Update Official Website**: 
     + Update any changes uploaded in the repository to the associated lab website(s) once a month: The first day of the month (or first working day possible).
     + Review the repository content and lab website(s) content once a quarter, during the days associated to lab data management and overview.
-
